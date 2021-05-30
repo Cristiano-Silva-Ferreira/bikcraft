@@ -20,18 +20,45 @@ p {
     cursor: pointer;
 }
 
+
 .btn:hover {
     color: #fff;
     border-color: #fff;
 }
 
+.btn.btn-preto:hover {
+    color: #000;
+    border-color: #000;
+}
+
+.subtitulo {
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: bold;
+    letter-spacing: .1em;
+    color: #000;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 20px ;
+}
+
+.subtitulo::after {
+    content: "";  
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #000;
+    margin: 10px auto;
+}
+
 /* Header */
 .header {
     position: fixed;
-    top: 0;
+    top: 0; 
     width: 100%;
     background: #fec63e;
     padding: 15px 0;
+    z-index: 10;
 }
 
 .header_menu {
@@ -87,12 +114,12 @@ p {
     font-style: italic;
 }
 .quote-externo p::before, .quote-externo p::after {
-  content: "";  
-  display: block;
-  width: 60px;
-  height: 3px;
-  background: #fff;
-  margin: 14px auto 10px auto;
+    content: "";  
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #fff;
+    margin: 14px auto 10px auto;
 }
 
 .quote-externo cite {
@@ -101,5 +128,53 @@ p {
     text-transform: uppercase;
     font-size: 14px;
     letter-spacing: .1em;
+}
+
+
+/* Produtos */
+.produtos {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.produtos_lista li {
+    background: #fec63e;
+}
+
+.produtos_lista li h3 {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    margin-top: 20px;
+}
+
+.produtos_lista li h3::after {
+    content: "";  
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #000;
+    margin: 2px auto;
+}
+
+.produtos_lista li p {
+    padding:  10px 20px 20px 20px;
+}
+
+.produtos_icone {
+    background: #000;
+    padding: 20px;
+}
+
+.call {
+    padding-top: 40px;
+    text-align: center;
+    clear: both;
+}
+
+.call p {
+    margin-bottom: 20px;
 }
 
